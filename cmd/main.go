@@ -21,7 +21,9 @@ func main() {
 	godotenv.Load("../gotp/.env") // optional, for local dev only
 
 	rdb := redis.NewClient(&redis.Options{
-		Addr: envOr("REDIS_ADDR", "localhost:6379"),
+		Addr:     envOr("REDIS_ADDR", "localhost:6379"),
+		Password: envOr("REDIS_PASSWORD", ""), // no password set
+		DB:       envOrInt("REDIS_DB", 0),     // use default DB
 	})
 	defer rdb.Close()
 
