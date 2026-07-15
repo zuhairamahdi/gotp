@@ -76,3 +76,4 @@ uploads/
 
 # Misc logs
 *.log
+.venv
