@@ -30,3 +30,49 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+# Python / Flask
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+.eggs/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# Installer logs
+pip-log.txt
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+venv3/
+
+# pyenv / python versioning
+.Python
+.python-version
+
+# Flask instance folder and local env files
+instance/
+.env.*
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Database, uploads and migrations used by local Flask apps
+*.db
+migrations/
+uploads/
+
+# Misc logs
+*.log
